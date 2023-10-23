@@ -1,0 +1,98 @@
+body {
+	margin: auto;
+	padding: 0px 20px;
+}
+
+p {
+	font-size: 19.2px;
+}
+
+h1, h2, h3, h4, p, figcaption {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.cat_boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.cat_boxes figure {
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: black;
+	border-radius: 10px;
+}
+
+figure img {
+	margin: auto;
+	margin-bottom: 10px;
+	width: 100%;
+	max-width: 450px;
+}
+
+figure figcaption {
+	color: white;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+@media screen and (max-width: 792px) {
+
+	.cat_boxes {
+		flex-direction: column;
+	}
+
+	.cat_boxes figure {
+		max-width: 100%;
+	}
+}
+
+@media screen and (min-width: 792px) and (max-width: 1020px) {
+
+	body {
+		background-color: powderblue;
+	}
+
+	.cat_boxes {
+		flex-direction: row;
+	}
+
+	.cat_boxes figure {
+		width: 44%;
+		max-width: 405px;
+		margin-right: 20px;
+	}
+}
+
+@media screen and (min-width: 1020px) {
+
+	body {
+		background-color: darkseagreen;
+		min-width: 815px;
+		max-width: 1200px;
+	}
+
+	.cat_boxes {
+		flex-direction: row;
+	}
+
+	.cat_boxes figure {
+		width: 27%;
+		max-width: 300px;
+		margin-right: 20px;
+	}
+}
